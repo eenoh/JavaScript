@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boolean & If-Statements</title>
+</head>
+<body>
+  <script>
+    const hour = new Date().getHours(); 
+    const name = 'Emmanuel Enoh';
+    const age = 22;
+    const isHoliday = true; 
+    // Greeting message
+    if (hour >= 6 && hour <= 12) {
+      console.log(`Good morning ${name}!`);
+    } else if (hour >= 13 && hour <= 17) {
+      console.log(`Good afternoon ${name}!`);
+    } else {
+      console.log(`Good night ${name}!`);
+    }
+
+    // Discount logic
+    if ((age <= 6 || age >= 65) && !isHoliday) {
+      console.log('Discount');
+    } else {
+      console.log('No Discount');
+    }
+
+    // Heads Tails
+    const number = Math.random();
+    let result = '';
+    const guess = 'Tails';
+
+    if (number < 0.5) {
+      result = 'Heads';
+    } else {
+      result = 'Tails';
+    }
+
+    if (guess === result) {
+      console.log('You win!');
+    } else {
+      console.log('You lose!');
+    }
+  </script>
+</body>
+</html>
