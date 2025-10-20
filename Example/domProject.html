@@ -4,18 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM</title>
+
+  <style>
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+    }
+
+    body {
+      font-family: Arial;
+      padding-bottom: 110px;
+    }
+
+    .subscribe-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 35px;
+    }
+
+    .cost-input {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .calculate-button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <p>YouTube Subscribe Button</p>
-  <button onclick="subscribe()" class="js-subscribe-button">Subscribe</button>
+  <button onclick="subscribe()" class="js-subscribe-button subscribe-button">Subscribe</button>
 
   <p style="margin-top: 100px;">Amazon Shipping Calculator</p>
 
   <p>Orders under &#36;40 = &#43;&#36;10 shipping</p>
   <p>Orders over &#36;40 = FREE shipping</p>
 
-  <input type="number" class="js-cost" placeholder="Enter order cost">
-  <button onclick="calculateShipping()">Calculate</button>
+  <input type="number" class="js-cost cost-input" placeholder="Enter order cost">
+  <button onclick="calculateShipping()" class="calculate-button">Calculate</button>
 
   <p class="js-total"></p>
 
