@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+
+    const basketball = {
+      name: 'Spalding',
+      price: 2095
+    }
+
+    const basketball2 = {
+      name: 'Adidas',
+      price: 2095,
+      deliverytime: '3 days'
+    }
+
+    console.log(basketball);
+
+    basketball.price = 2595;
+    console.log(basketball.price);
+
+    if (basketball.price > basketball2.price) {
+      console.log(basketball.name);
+    } else if (basketball.price === basketball2.price) {
+      console.log(`Same Value: ${basketball.price}`);
+    } else {
+      console.log(basketball2.name);
+    }
+
+    let text = "Hello World!";
+    let result = text.toLowerCase();
+    console.log(result);
+
+
+  </script>
+</body>
+</html>
